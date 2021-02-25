@@ -1,0 +1,52 @@
+.container {
+  color: white;
+  padding: 5% 15%;
+}
+.background-img {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#myForm {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin: 0 auto;
+  border-radius: 0.3em;
+}
+.header-img {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.form-control {
+  width: 100%;
+}
+.col {
+  padding: 0;
+}
+hr {
+  border-top: 1px dotted #ffd880;
+  opacity: 50%;
+  margin-bottom: 3%;
+}
+
+/*
+<label>How did you hear about NSU ACM SC?</label>
+<br />
+<input  type="checkbox" name="How did you hear about NSU ACM SC?_1" value="Social Media"/>
+<label> Social Media</label>
+<br />
+<input type="checkbox" name="How did you hear about NSU ACM SC?_2" value="Suggestion through Friends"/>
+<label> Suggestion through Friends</label>
+<br />
+<input type="checkbox" name="How did you hear about NSU ACM SC?_3" value="NSU ECE Website"/>
+<label> NSU ECE Website</label>
+<br />
+<input type="checkbox" name="How did you hear about NSU ACM SC?_4" value="Other"/>
+<label> Other…</label>
+<br />
+<label>Facebook (Username/URL)*</label>
+<br />
+<input type="text" name="Facebook (Username/URL)" placeholder="Example: https://www.facebook.com/nsuacmc" required/>
+<br />
+*/

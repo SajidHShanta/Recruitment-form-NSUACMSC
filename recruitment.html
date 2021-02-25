@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Recruitment: NSU ACM SC</title>
+	<link rel="icon" href="image/icon.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+		function SubForm() {
+			$.ajax({
+				url: "https://api.apispreadsheets.com/data/8649/",
+				type: "post",
+				data: $("#myForm").serializeArray(),
+				success: function() {
+					alert("Form Data Submitted :)")
+				},
+				error: function() {
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
+</head>
+
+<body>
+	<img class="background-img" src="image/recruitmentBackground.png">
+	<div class="container">
+		<form id="myForm">
+			<img class="header-img" src="image/header.png" alt="NSU ACM SC Recruitment Spring 2021">
+			<p>
+				Dear Applicant,<br>
+				Welcome to the official Fall Recruitment of NSU ACM Student Chapter, the first chartered ACM Student Chapter of Bangladesh. Your application will be processed in 2 steps, First, you are required to fill up the following form with all
+				necessary information. Please be sure to properly enter details as your answers will determine whether you progress to the 2nd part of the recruitment process.
+				Upon completion of the 1st part of the recruitment process, you will be called through text/email for the 2nd phase of recruitment where you will sit for an online interview.
+				<br>
+				The final results will be published on our official Facebook page. Accepted applicants will also be informed via E-mail.
+			</p>
+
+			<label>Full Name*</label>
+			<br />
+			<input class="form-control" type="text" name="Name" placeholder="Full Name" required autofocus />
+			<br />
+
+			<label>Email*</label>
+			<br />
+			<input class="form-control" type="email" name="Email" placeholder="me@mail.com" required />
+			<br />
+
+			<label>Contact Number*</label>
+			<br />
+			<input class="form-control" type="number" name="contact Number" placeholder="01.." required />
+			<br />
+
+			<label>Facebook (Username/URL)*</label>
+			<br />
+			<input class="form-control" type="text" name="Facebook (Username/URL)" placeholder="Example: https://www.facebook.com/nsuacmc" required />
+			<br />
+
+			<label>How did you hear about NSU ACM SC?</label>
+			<br />
+			<input type="checkbox" name="How did you hear about NSU ACM SC?_1" value="Social Media" />
+			<label> Social Media</label>
+			<br />
+			<input type="checkbox" name="How did you hear about NSU ACM SC?_2" value="Suggestion through Friends" />
+			<label> Suggestion through Friends</label>
+			<br />
+			<input type="checkbox" name="How did you hear about NSU ACM SC?_3" value="NSU ECE Website" />
+			<label> NSU ECE Website</label>
+			<br />
+			<input type="checkbox" name="How did you hear about NSU ACM SC?_4" value="Other" />
+			<label> Other…</label>
+			<br />
+
+			<br />
+			<h5 style="color: #ffff4c">Show us your skills & interests !</h5>
+			<p>Fill up all the fields in this section. Be honest! You will be questioned during the interview. There's no shame if you have no idea regarding any of mentioned fields.</p>
+
+			<hr>
+
+			<label>Do you have experience in any of the following?</label>
+			<br />
+			<input type="checkbox" name="Do you have experience in any of the following?_1" value="Volunteering" />
+			<label> Volunteering</label>
+			<br />
+			<input type="checkbox" name="Do you have experience in any of the following?_2" value="Leadership Skills" />
+			<label> Leadership Skills</label>
+			<br />
+			<input type="checkbox" name="Do you have experience in any of the following?_3" value="Event Management and Organization" />
+			<label> Event Management and Organization</label>
+			<br />
+			<input type="checkbox" name="Do you have experience in any of the following?_4" value="Administrative Work" />
+			<label> Administrative Work</label>
+			<br />
+
+			<label>
+				Do you have any previous experience in volunteering for any organization? Have you ever organized/hosted any family functions by yourself? What was it and how did it go?
+			</label>
+			<textarea class="form-control" name="Previous Experience" rows="4">
+			</textarea>
+			<br />
+
+			<hr>
+
+			<label>Are you familiar with any of the following?</label>
+			<br />
+			<input type="checkbox" name="Are you familiar with any of the following?_1" value="Content Writing" />
+			<label> Content Writing</label>
+			<br />
+			<input type="checkbox" name="Are you familiar with any of the following?_2" value="Anchoring" />
+			<label> Anchoring</label>
+			<br />
+			<input type="checkbox" name="Are you familiar with any of the following?_3" value="Debating" />
+			<label> Debating</label>
+			<br />
+			<input type="checkbox" name="Are you familiar with any of the following?_4" value="Public Speaking" />
+			<label> Public Speaking</label>
+			<br />
+
+			<label>
+				Suppose you have been chosen as the head of a clan in Mars. Which rules will you apply as the leader there?
+			</label>
+			<textarea class="form-control" name="head of a clan in Mars" rows="4">
+			</textarea>
+			<br />
+
+			<hr>
+
+			<label>Are you skilled in these areas?</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_1" value="Adobe Illustrator" />
+			<label> Adobe Illustrator</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_2" value="Adobe Photoshop" />
+			<label> Adobe Photoshop</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_3" value="Adobe Premier Pro" />
+			<label> Adobe Premier Pro</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_4" value="Adobe After Effects" />
+			<label> Adobe After Effects</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_5" value="AutoCAD" />
+			<label> AutoCAD</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_6" value="Arts & Craft" />
+			<label> Arts & Craft</label>
+			<br />
+			<input type="checkbox" name="Are you skilled in these areas?_7" value="Facebook Ads Campaign" />
+			<label> Facebook Ads Campaign</label>
+			<br />
+
+			<label>Feel free to drop your previous works down below! (If any)</label>
+			<br />
+			<input class="form-control" type="text" name="Portfolio" placeholder="drive or any portfolio link" />
+			<br />
+
+			<hr>
+
+			<label>Do you have any experience related to any of the following?</label>
+			<br />
+			<input type="checkbox" name="Do you have any experience related to any of the following?_1" value="Arranging Funds for Events" />
+			<label> Arranging Funds for Events</label>
+			<br />
+			<input type="checkbox" name="Do you have any experience related to any of the following?_2" value="Involved in Corporate & Business Deals" />
+			<label> Involved in Corporate & Business Deals</label>
+			<br />
+			<input type="checkbox" name="Do you have any experience related to any of the following?_3" value="Communicating with Media" />
+			<label> Communicating with Media</label>
+			<br />
+			<input type="checkbox" name="Do you have any experience related to any of the following?_4" value="Negotiating Deals" />
+			<label> Negotiating Deals</label>
+			<br />
+			<input type="checkbox" name="Do you have any experience related to any of the following?_5" value="Connections in firms, tech-companies etc." />
+			<label> Connections in firms, tech-companies etc.</label>
+			<br />
+
+			<label>
+				Did you ever have to pursue someone to manage something? If yes, how did you convince them? If you haven’t, you can also improvise now and write about how you can convince a person to have your work done.
+			</label>
+			<textarea class="form-control" name="Pursue someone to manage something?" rows="4">
+			</textarea>
+			<br />
+
+			<hr>
+
+			<label>Are you involved or interested in any of the following fields?</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_1" value="Web Development" />
+			<label> Web Development</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_2" value="App Development" />
+			<label> App Development</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_3" value="A.I." />
+			<label> A.I.</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_4" value="Machine Learning" />
+			<label> Machine Learning</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_5" value="Competitive Programming" />
+			<label> Competitive Programming</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_6" value="Robotics" />
+			<label> Robotics</label>
+			<br />
+			<input type="checkbox" name="Involved or interested in_7" value="Embedded Systems" />
+			<label> Embedded Systems</label>
+			<br />
+
+			<label>Feel free to mention any other skills you possess that you might want to share with us. (You can also share about any previous accomplishment, prizes, etc.)</label>
+			<br />
+			<input class="form-control" type="text" name="Other skills" />
+			<br />
+
+			<label>
+				Optional: Feel free to drop the links to your GitHub Profile/ LinkedIn Profile /Portfolio/ Blog below (If any)
+			</label>
+			<br />
+			<input class="form-control" type="text" name="GitHub Profile/ LinkedIn Profile /Portfolio/ Blog" placeholder="Example: https://github.com/NSU-ACM-SC/" />
+			<br />
+
+			<hr>
+
+			<fieldset id="interviewDate">
+				<label>Select your preferred date for the interview</label><br>
+				<input type="radio" value="28/02/2021" name="interviewDate">
+				<label> 28/02/2021</label>
+				<br />
+				<input type="radio" value="01/03/2021" name="interviewDate">
+				<label> 01/03/2021</label>
+				<br />
+				<input type="radio" value="02/03/2021" name="interviewDate">
+				<label> 02/03/2021</label>
+				<br />
+			</fieldset>
+
+
+			<fieldset id="timeSlot">
+				<label>Please select your preferred interview time slot</label><br>
+				<input type="radio" value="6:05 PM- 6:30 PM" name="timeSlot">
+				<label> 6:05 PM- 6:30 PM</label>
+				<br />
+				<input type="radio" value="6:35 PM- 7:00 PM" name="timeSlot">
+				<label> 6:35 PM- 7:00 PM</label>
+				<br />
+				<input type="radio" value="7:05 PM- 7:30 PM" name="timeSlot">
+				<label> 7:05 PM- 7:30 PM</label>
+				<br />
+				<input type="radio" value="7:35 PM- 8:00 PM" name="timeSlot">
+				<label> 7:35 PM- 8:00 PM</label>
+				<br />
+				<input type="radio" value="8:05 PM- 8:35 PM" name="timeSlot">
+				<label> 8:05 PM- 8:35 PM</label>
+				<br />
+				<input type="radio" value="8:35 PM- 9:05 PM" name="timeSlot">
+				<label> 8:35 PM- 9:05 PM</label>
+				<br />
+			</fieldset>
+
+			<button type="submit" class="btn btn-danger btn-block" onclick='SubForm()'>Submit</button>
+		</form>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
